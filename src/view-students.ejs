@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="../../../../../student.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Management</h1>
+            <a href="/students/add-newStudent" title="👨‍🎓👩‍🎓">Add New Student</a>
+        </div>
+        <div class="contents">
+            <h1>Student Lists</h1>
+            <table>
+                <tr>
+                    <th>#.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Option</th>
+                </tr>
+
+            <%data.forEach(rows=>{%>
+                 <tr>
+                    <td><%=rows.id%></td>
+                    <td><%=rows.name%></td>
+                    <td style="text-align: center;"><%=rows.age%></td>
+                    <td style="text-align: center;"><%=rows.grade%></td>
+                    <td><%=rows.email%></td>
+                    <td style="text-align: right;"><%=rows.phone%></td>
+                    <td style="text-align: center;"><%=rows.address%></td>
+                    <td style="text-align: center;">
+                        <a href="/students/update-student/<%=rows.id%>">Update</a>
+                        <a href="/students/delete-student/<%=rows.id%>">Delete</a>
+                    </td>
+                </tr>
+            <%})%>
+               
+            </table>
+        </div>
+    </div>
+</body>
+</html>

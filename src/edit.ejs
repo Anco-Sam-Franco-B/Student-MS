@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="../../student.css">                                                                                                                                                                                
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Management</h1>
+            <a href="/students/add-newStudent" title="👨‍🎓👩‍🎓">Add New Student</a>
+        </div>
+        <div class="contents">
+            <div class="form">
+                <div class="form-header">
+                    <h1>Update Student 👨‍🎓👩‍🎓</h1>
+                </div>
+                <form action="/students/edit-student/<%=result[0].id%>" method="post">
+                    <input type="text" name="name" placeholder="Enter Name" value="<%=result[0].name%>">
+                    <input type="number" name="age" placeholder="Enter Age" value="<%=result[0].age%>">
+                    <input type="text" name="grade" placeholder="Enter Grade" value="<%=result[0].grade%>">
+                    <input type="email" name="email" placeholder="Enter Email" value="<%=result[0].email%>">
+                    <input type="tel" name="phone" placeholder="Enter Phone" value="<%=result[0].phone%>">
+                    <input type="text" name="address" placeholder="Enter Address" value="<%=result[0].address%>">
+
+                    <div class="btn">
+                        <button>Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

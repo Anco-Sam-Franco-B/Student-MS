@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="../student.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Management</h1>
+            <a href="/students/add-newStudent" title="👨‍🎓👩‍🎓">Add New Student</a>
+        </div>
+        <div class="contents">
+            <div class="form">
+                <div class="form-header">
+                    <h1>Add New 👨‍🎓👩‍🎓</h1>
+                </div>
+                <form action="/students/save-student" method="post">
+                    <input type="text" name="name" placeholder="Enter Name">
+                    <input type="number" name="age" placeholder="Enter Age">
+                    <select name="grade">
+                            <option selected>Select Grade</option>
+                            <option value="A">Grade A</option>
+                            <option value="B">Grade B</option>
+                            <option value="C">Grade C</option>
+                            <option value="D">Grade D</option>
+                            <option value="E">Grade E</option>
+                            <option value="F">Grade F</option>
+                    </select>
+                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="tel" name="phone" placeholder="Enter Phone">
+                    <input type="text" name="address" placeholder="Enter Address">
+
+                    <div class="btn">
+                        <button>Save Student</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
