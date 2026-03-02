@@ -14,9 +14,9 @@
   "author": "NBSSF",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.4",
+    "body-parser": "^2.0.0",
     "ejs": "^3.1.10",
-    "express": "^4.22.0",
+    "express": "^4.22.1",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.0",
     "tailwind": "^4.0.0"
