@@ -14,16 +14,16 @@
   "author": "NBSSF",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^2.0.0",
+    "body-parser": "^2.0.1",
     "ejs": "^3.1.10",
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "mysql": "^2.18.1",
-    "nodemon": "^3.1.0",
+    "nodemon": "^3.1.14",
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.15",
     "tailwindcss": "^3.4.17"
   }
 }
